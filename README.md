@@ -1,6 +1,6 @@
 # Generated maps
 
-Generated from [`bc28be9a3dc077b9946adfa43ed03d7b33ad9260`](https://github.com/elsa-workflows/elsa-foundation/commit/bc28be9a3dc077b9946adfa43ed03d7b33ad9260) of `main`. Links into the source tree are pinned to that commit.
+Generated from [`139bfac19dccaa39c594cc0953a1632e7cf4d38a`](https://github.com/kallievz/elsa-foundation/commit/139bfac19dccaa39c594cc0953a1632e7cf4d38a) of `main`. Links into the source tree are pinned to that commit.
 
 This branch is written only by the `Publish generated maps` job in `.github/workflows/ci.yml`, after every push to `main`. Do not commit to it or open pull requests against it. To regenerate the same set locally from a checkout of `main`:
 
@@ -8,7 +8,7 @@ This branch is written only by the `Publish generated maps` job in `.github/work
 dotnet run --project tools/maps/Elsa.Maps.Generator -- all
 ```
 
-What each map holds, and how to read them: [docs/maps/README.md on main](https://github.com/elsa-workflows/elsa-foundation/blob/main/docs/maps/README.md).
+What each map holds, and how to read them: [docs/maps/README.md on main](https://github.com/kallievz/elsa-foundation/blob/main/docs/maps/README.md).
 
 ## Files
 
