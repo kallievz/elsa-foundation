@@ -265,6 +265,11 @@
         },
         {
           "type": "internal",
+          "id": "Elsa.ActorFoundation.BuiltIn.PostgreSql",
+          "path": "essentials/src/ActorFoundation/BuiltIn/PostgreSql/Elsa.ActorFoundation.BuiltIn.PostgreSql.csproj"
+        },
+        {
+          "type": "internal",
           "id": "Elsa.Api.Capabilities",
           "path": "essentials/src/Api/Capabilities/Elsa.Api.Capabilities/Elsa.Api.Capabilities.csproj"
         },
@@ -675,6 +680,11 @@
         },
         {
           "type": "internal",
+          "id": "Elsa.Workflows.Runtime.Native.Model",
+          "path": "essentials/src/Workflows/Runtime/Native/Model/Elsa.Workflows.Runtime.Native.Model.csproj"
+        },
+        {
+          "type": "internal",
           "id": "Elsa.Workflows.Runtime.Persistence.EntityFrameworkCore",
           "path": "essentials/src/Workflows/Runtime/Persistence/EntityFrameworkCore/Elsa.Workflows.Runtime.Persistence.EntityFrameworkCore.csproj"
         },
@@ -697,6 +707,11 @@
           "type": "internal",
           "id": "Elsa.Workflows.Runtime.Scheduling",
           "path": "essentials/src/Workflows/Runtime/Scheduling/Elsa.Workflows.Runtime.Scheduling.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.Workflows.Runtime.WorkflowActor",
+          "path": "essentials/src/Workflows/Runtime/WorkflowActor/Elsa.Workflows.Runtime.WorkflowActor.csproj"
         },
         {
           "type": "internal",
@@ -3094,6 +3109,366 @@
           "type": "pinned-transitive",
           "id": "Microsoft.Extensions.Primitives",
           "version": "10.0.12"
+        }
+      ]
+    },
+    {
+      "path": "essentials/src/ActorFoundation/BuiltIn/Durable/Elsa.ActorFoundation.BuiltIn.Durable.csproj",
+      "name": "Elsa.ActorFoundation.BuiltIn.Durable",
+      "kind": "source",
+      "domain": "Elsa.ActorFoundation",
+      "sub_domain": "BuiltIn.Durable",
+      "role": "feature/implementation",
+      "declared_target_framework": null,
+      "packable": true,
+      "package_id": "Elsa.ActorFoundation.BuiltIn.Durable",
+      "line": "B",
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.BuiltIn.Runtime",
+          "path": "essentials/src/ActorFoundation/BuiltIn/Runtime/Elsa.ActorFoundation.BuiltIn.Runtime.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.Contracts",
+          "path": "essentials/src/ActorFoundation/Contracts/Elsa.ActorFoundation.Contracts.csproj"
+        }
+      ]
+    },
+    {
+      "path": "essentials/src/ActorFoundation/BuiltIn/Hosting/Elsa.ActorFoundation.BuiltIn.Hosting.csproj",
+      "name": "Elsa.ActorFoundation.BuiltIn.Hosting",
+      "kind": "source",
+      "domain": "Elsa.ActorFoundation",
+      "sub_domain": "BuiltIn.Hosting",
+      "role": "feature/implementation",
+      "declared_target_framework": null,
+      "packable": true,
+      "package_id": "Elsa.ActorFoundation.BuiltIn.Hosting",
+      "line": "B",
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.BuiltIn.Runtime",
+          "path": "essentials/src/ActorFoundation/BuiltIn/Runtime/Elsa.ActorFoundation.BuiltIn.Runtime.csproj"
+        }
+      ]
+    },
+    {
+      "path": "essentials/src/ActorFoundation/BuiltIn/PostgreSql/Elsa.ActorFoundation.BuiltIn.PostgreSql.csproj",
+      "name": "Elsa.ActorFoundation.BuiltIn.PostgreSql",
+      "kind": "source",
+      "domain": "Elsa.ActorFoundation",
+      "sub_domain": "BuiltIn.PostgreSql",
+      "role": "feature/implementation",
+      "declared_target_framework": null,
+      "packable": true,
+      "package_id": "Elsa.ActorFoundation.BuiltIn.PostgreSql",
+      "line": "B",
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.BuiltIn.Hosting",
+          "path": "essentials/src/ActorFoundation/BuiltIn/Hosting/Elsa.ActorFoundation.BuiltIn.Hosting.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.BuiltIn.Store.EntityFrameworkCore",
+          "path": "essentials/src/ActorFoundation/BuiltIn/Store/EntityFrameworkCore/Elsa.ActorFoundation.BuiltIn.Store.EntityFrameworkCore.csproj"
+        },
+        {
+          "type": "external",
+          "id": "Microsoft.Extensions.Hosting.Abstractions",
+          "version": "10.0.10"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.Data.SqlClient",
+          "version": "7.0.2"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.EntityFrameworkCore",
+          "version": "10.0.10"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.EntityFrameworkCore.Relational",
+          "version": "10.0.10"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.EntityFrameworkCore.SqlServer",
+          "version": "10.0.10"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.EntityFrameworkCore.Sqlite",
+          "version": "10.0.10"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.Extensions.Caching.Abstractions",
+          "version": "10.0.12"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.Extensions.Caching.Memory",
+          "version": "10.0.10"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.Extensions.Configuration.Abstractions",
+          "version": "10.0.10"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.Extensions.DependencyInjection",
+          "version": "10.0.10"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.Extensions.DependencyInjection.Abstractions",
+          "version": "10.0.12"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.Extensions.Logging",
+          "version": "10.0.10"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "10.0.12"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.Extensions.Options",
+          "version": "10.0.10"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.Extensions.Primitives",
+          "version": "10.0.12"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "MySql.Data",
+          "version": "26.7.0"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "MySql.EntityFrameworkCore",
+          "version": "10.0.9"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Npgsql",
+          "version": "10.0.3"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "version": "10.0.0"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "SQLitePCLRaw.bundle_e_sqlite3",
+          "version": "3.0.3"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "System.Security.Cryptography.Pkcs",
+          "version": "9.0.21"
+        }
+      ]
+    },
+    {
+      "path": "essentials/src/ActorFoundation/BuiltIn/Runtime/Elsa.ActorFoundation.BuiltIn.Runtime.csproj",
+      "name": "Elsa.ActorFoundation.BuiltIn.Runtime",
+      "kind": "source",
+      "domain": "Elsa.ActorFoundation",
+      "sub_domain": "BuiltIn.Runtime",
+      "role": "feature/implementation",
+      "declared_target_framework": null,
+      "packable": true,
+      "package_id": "Elsa.ActorFoundation.BuiltIn.Runtime",
+      "line": "B",
+      "edges": []
+    },
+    {
+      "path": "essentials/src/ActorFoundation/BuiltIn/Store/EntityFrameworkCore/Elsa.ActorFoundation.BuiltIn.Store.EntityFrameworkCore.csproj",
+      "name": "Elsa.ActorFoundation.BuiltIn.Store.EntityFrameworkCore",
+      "kind": "source",
+      "domain": "Elsa.ActorFoundation",
+      "sub_domain": "BuiltIn.Store.EntityFrameworkCore",
+      "role": "feature/implementation",
+      "declared_target_framework": null,
+      "packable": true,
+      "package_id": "Elsa.ActorFoundation.BuiltIn.Store.EntityFrameworkCore",
+      "line": "B",
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.BuiltIn.Durable",
+          "path": "essentials/src/ActorFoundation/BuiltIn/Durable/Elsa.ActorFoundation.BuiltIn.Durable.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.Contracts",
+          "path": "essentials/src/ActorFoundation/Contracts/Elsa.ActorFoundation.Contracts.csproj"
+        },
+        {
+          "type": "external",
+          "id": "Microsoft.Data.SqlClient",
+          "version": "7.0.2"
+        },
+        {
+          "type": "external",
+          "id": "Microsoft.EntityFrameworkCore.SqlServer",
+          "version": "10.0.10"
+        },
+        {
+          "type": "external",
+          "id": "Microsoft.EntityFrameworkCore.Sqlite",
+          "version": "10.0.10"
+        },
+        {
+          "type": "external",
+          "id": "MySql.EntityFrameworkCore",
+          "version": "10.0.9"
+        },
+        {
+          "type": "external",
+          "id": "Npgsql",
+          "version": "10.0.3"
+        },
+        {
+          "type": "external",
+          "id": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "version": "10.0.0"
+        },
+        {
+          "type": "external",
+          "id": "SQLitePCLRaw.bundle_e_sqlite3",
+          "version": "3.0.3"
+        },
+        {
+          "type": "external",
+          "id": "System.Security.Cryptography.Pkcs",
+          "version": "9.0.21"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.EntityFrameworkCore",
+          "version": "10.0.10"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.EntityFrameworkCore.Relational",
+          "version": "10.0.10"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.Extensions.Caching.Abstractions",
+          "version": "10.0.12"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.Extensions.Caching.Memory",
+          "version": "10.0.10"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.Extensions.Configuration.Abstractions",
+          "version": "10.0.10"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.Extensions.DependencyInjection",
+          "version": "10.0.10"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.Extensions.DependencyInjection.Abstractions",
+          "version": "10.0.12"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.Extensions.Logging",
+          "version": "10.0.10"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "10.0.12"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.Extensions.Options",
+          "version": "10.0.10"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "Microsoft.Extensions.Primitives",
+          "version": "10.0.12"
+        },
+        {
+          "type": "pinned-transitive",
+          "id": "MySql.Data",
+          "version": "26.7.0"
+        }
+      ]
+    },
+    {
+      "path": "essentials/src/ActorFoundation/Contracts/Elsa.ActorFoundation.Contracts.csproj",
+      "name": "Elsa.ActorFoundation.Contracts",
+      "kind": "source",
+      "domain": "Elsa.ActorFoundation",
+      "sub_domain": "Contracts",
+      "role": "feature/implementation",
+      "declared_target_framework": null,
+      "packable": true,
+      "package_id": "Elsa.ActorFoundation.Contracts",
+      "line": "B",
+      "edges": []
+    },
+    {
+      "path": "essentials/src/ActorFoundation/Hosting/Elsa.ActorFoundation.Hosting.csproj",
+      "name": "Elsa.ActorFoundation.Hosting",
+      "kind": "source",
+      "domain": "Elsa.ActorFoundation",
+      "sub_domain": "Hosting",
+      "role": "feature/implementation",
+      "declared_target_framework": null,
+      "packable": true,
+      "package_id": "Elsa.ActorFoundation.Hosting",
+      "line": "B",
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.Contracts",
+          "path": "essentials/src/ActorFoundation/Contracts/Elsa.ActorFoundation.Contracts.csproj"
+        }
+      ]
+    },
+    {
+      "path": "essentials/src/ActorFoundation/Model/Contracts/Elsa.ActorFoundation.Model.Contracts.csproj",
+      "name": "Elsa.ActorFoundation.Model.Contracts",
+      "kind": "source",
+      "domain": "Elsa.ActorFoundation",
+      "sub_domain": "Model.Contracts",
+      "role": "feature/implementation",
+      "declared_target_framework": null,
+      "packable": true,
+      "package_id": "Elsa.ActorFoundation.Model.Contracts",
+      "line": "B",
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.Contracts",
+          "path": "essentials/src/ActorFoundation/Contracts/Elsa.ActorFoundation.Contracts.csproj"
         }
       ]
     },
@@ -11191,6 +11566,19 @@
       ]
     },
     {
+      "path": "essentials/src/Workflows/Runtime/Graph/Elsa.Workflows.Runtime.Graph.csproj",
+      "name": "Elsa.Workflows.Runtime.Graph",
+      "kind": "source",
+      "domain": "Elsa.Workflows",
+      "sub_domain": "Runtime.Graph",
+      "role": "feature/implementation",
+      "declared_target_framework": null,
+      "packable": true,
+      "package_id": "Elsa.Workflows.Runtime.Graph",
+      "line": "B",
+      "edges": []
+    },
+    {
       "path": "essentials/src/Workflows/Runtime/Http/Elsa.Workflows.Runtime.Http.csproj",
       "name": "Elsa.Workflows.Runtime.Http",
       "kind": "source",
@@ -11379,6 +11767,59 @@
           "type": "pinned-transitive",
           "id": "Microsoft.Extensions.Primitives",
           "version": "10.0.12"
+        }
+      ]
+    },
+    {
+      "path": "essentials/src/Workflows/Runtime/Native/Activities/Elsa.Workflows.Runtime.Native.Activities.csproj",
+      "name": "Elsa.Workflows.Runtime.Native.Activities",
+      "kind": "source",
+      "domain": "Elsa.Workflows",
+      "sub_domain": "Runtime.Native.Activities",
+      "role": "feature/implementation",
+      "declared_target_framework": null,
+      "packable": true,
+      "package_id": "Elsa.Workflows.Runtime.Native.Activities",
+      "line": "B",
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.Contracts",
+          "path": "essentials/src/ActorFoundation/Contracts/Elsa.ActorFoundation.Contracts.csproj"
+        }
+      ]
+    },
+    {
+      "path": "essentials/src/Workflows/Runtime/Native/Model/Elsa.Workflows.Runtime.Native.Model.csproj",
+      "name": "Elsa.Workflows.Runtime.Native.Model",
+      "kind": "source",
+      "domain": "Elsa.Workflows",
+      "sub_domain": "Runtime.Native.Model",
+      "role": "feature/implementation",
+      "declared_target_framework": null,
+      "packable": true,
+      "package_id": "Elsa.Workflows.Runtime.Native.Model",
+      "line": "B",
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.Contracts",
+          "path": "essentials/src/ActorFoundation/Contracts/Elsa.ActorFoundation.Contracts.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.Model.Contracts",
+          "path": "essentials/src/ActorFoundation/Model/Contracts/Elsa.ActorFoundation.Model.Contracts.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.Workflows.Runtime.Graph",
+          "path": "essentials/src/Workflows/Runtime/Graph/Elsa.Workflows.Runtime.Graph.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.Workflows.Runtime.Native.Activities",
+          "path": "essentials/src/Workflows/Runtime/Native/Activities/Elsa.Workflows.Runtime.Native.Activities.csproj"
         }
       ]
     },
@@ -11898,6 +12339,30 @@
           "type": "pinned-transitive",
           "id": "Microsoft.Extensions.Primitives",
           "version": "10.0.12"
+        }
+      ]
+    },
+    {
+      "path": "essentials/src/Workflows/Runtime/WorkflowActor/Elsa.Workflows.Runtime.WorkflowActor.csproj",
+      "name": "Elsa.Workflows.Runtime.WorkflowActor",
+      "kind": "source",
+      "domain": "Elsa.Workflows",
+      "sub_domain": "Runtime.WorkflowActor",
+      "role": "feature/implementation",
+      "declared_target_framework": null,
+      "packable": true,
+      "package_id": "Elsa.Workflows.Runtime.WorkflowActor",
+      "line": "B",
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.Contracts",
+          "path": "essentials/src/ActorFoundation/Contracts/Elsa.ActorFoundation.Contracts.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.Model.Contracts",
+          "path": "essentials/src/ActorFoundation/Model/Contracts/Elsa.ActorFoundation.Model.Contracts.csproj"
         }
       ]
     },
@@ -14717,6 +15182,229 @@
       ]
     },
     {
+      "path": "essentials/tests/ActorFoundation/Legacy/Workflows/Elsa.ActorFoundation.Legacy.Workflows.csproj",
+      "name": "Elsa.ActorFoundation.Legacy.Workflows",
+      "kind": "test",
+      "domain": "Elsa.ActorFoundation",
+      "sub_domain": "Legacy.Workflows",
+      "role": "test",
+      "declared_target_framework": null,
+      "packable": false,
+      "package_id": null,
+      "line": null,
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.BuiltIn.Durable",
+          "path": "essentials/src/ActorFoundation/BuiltIn/Durable/Elsa.ActorFoundation.BuiltIn.Durable.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.Model.Contracts",
+          "path": "essentials/src/ActorFoundation/Model/Contracts/Elsa.ActorFoundation.Model.Contracts.csproj"
+        }
+      ]
+    },
+    {
+      "path": "essentials/tests/ActorFoundation/Native/Run/Elsa.ActorFoundation.Native.Run.csproj",
+      "name": "Elsa.ActorFoundation.Native.Run",
+      "kind": "test",
+      "domain": "Elsa.ActorFoundation",
+      "sub_domain": "Native.Run",
+      "role": "test",
+      "declared_target_framework": null,
+      "packable": false,
+      "package_id": null,
+      "line": null,
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.BuiltIn.Hosting",
+          "path": "essentials/src/ActorFoundation/BuiltIn/Hosting/Elsa.ActorFoundation.BuiltIn.Hosting.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.BuiltIn.PostgreSql",
+          "path": "essentials/src/ActorFoundation/BuiltIn/PostgreSql/Elsa.ActorFoundation.BuiltIn.PostgreSql.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.BuiltIn.Store.EntityFrameworkCore",
+          "path": "essentials/src/ActorFoundation/BuiltIn/Store/EntityFrameworkCore/Elsa.ActorFoundation.BuiltIn.Store.EntityFrameworkCore.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.Hosting",
+          "path": "essentials/src/ActorFoundation/Hosting/Elsa.ActorFoundation.Hosting.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.Workflows.Runtime.WorkflowActor",
+          "path": "essentials/src/Workflows/Runtime/WorkflowActor/Elsa.Workflows.Runtime.WorkflowActor.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Kernel.Foundation.InMemory",
+          "path": "essentials/tests/ActorFoundation/Store/InMemory/Elsa.ActorFoundation.Store.InMemory.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Kernel.Native.Legacy",
+          "path": "essentials/tests/Workflows/Runtime/Native/Legacy/Elsa.Workflows.Runtime.Native.Legacy.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.Workflows.Runtime.Native.Migration.SqliteFixture",
+          "path": "essentials/tests/Workflows/Runtime/Native/Migration/SqliteFixture/Elsa.Workflows.Runtime.Native.Migration.SqliteFixture.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.Workflows.Runtime.Statecharts.OrderFixture",
+          "path": "essentials/tests/Workflows/Runtime/Statecharts/OrderFixture/Elsa.Workflows.Runtime.Statecharts.OrderFixture.csproj"
+        }
+      ]
+    },
+    {
+      "path": "essentials/tests/ActorFoundation/Simulation/Elsa.ActorFoundation.Simulation.csproj",
+      "name": "Elsa.ActorFoundation.Simulation",
+      "kind": "test",
+      "domain": "Elsa.ActorFoundation",
+      "sub_domain": "Simulation",
+      "role": "test",
+      "declared_target_framework": null,
+      "packable": false,
+      "package_id": null,
+      "line": null,
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.BuiltIn.Hosting",
+          "path": "essentials/src/ActorFoundation/BuiltIn/Hosting/Elsa.ActorFoundation.BuiltIn.Hosting.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.Workflows.Runtime.WorkflowActor",
+          "path": "essentials/src/Workflows/Runtime/WorkflowActor/Elsa.Workflows.Runtime.WorkflowActor.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Kernel.Workflows",
+          "path": "essentials/tests/ActorFoundation/Legacy/Workflows/Elsa.ActorFoundation.Legacy.Workflows.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Kernel.Foundation.InMemory",
+          "path": "essentials/tests/ActorFoundation/Store/InMemory/Elsa.ActorFoundation.Store.InMemory.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.TestSupport",
+          "path": "essentials/tests/ActorFoundation/TestSupport/Elsa.ActorFoundation.TestSupport.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Kernel.Native.Legacy",
+          "path": "essentials/tests/Workflows/Runtime/Native/Legacy/Elsa.Workflows.Runtime.Native.Legacy.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Kernel.Statecharts",
+          "path": "prototypes/kernel-model/models/Statecharts/Kernel.Statecharts.csproj"
+        }
+      ]
+    },
+    {
+      "path": "essentials/tests/ActorFoundation/Store/Conformance/Elsa.ActorFoundation.Store.Conformance.csproj",
+      "name": "Elsa.ActorFoundation.Store.Conformance",
+      "kind": "test",
+      "domain": "Elsa.ActorFoundation",
+      "sub_domain": "Store.Conformance",
+      "role": "test",
+      "declared_target_framework": null,
+      "packable": false,
+      "package_id": null,
+      "line": null,
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Kernel.Workflows",
+          "path": "essentials/tests/ActorFoundation/Legacy/Workflows/Elsa.ActorFoundation.Legacy.Workflows.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.TestSupport",
+          "path": "essentials/tests/ActorFoundation/TestSupport/Elsa.ActorFoundation.TestSupport.csproj"
+        }
+      ]
+    },
+    {
+      "path": "essentials/tests/ActorFoundation/Store/EntityFramework/Elsa.ActorFoundation.Store.EntityFramework.csproj",
+      "name": "Elsa.ActorFoundation.Store.EntityFramework",
+      "kind": "test",
+      "domain": "Elsa.ActorFoundation",
+      "sub_domain": "Store.EntityFramework",
+      "role": "test",
+      "declared_target_framework": null,
+      "packable": false,
+      "package_id": null,
+      "line": null,
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.BuiltIn.Store.EntityFrameworkCore",
+          "path": "essentials/src/ActorFoundation/BuiltIn/Store/EntityFrameworkCore/Elsa.ActorFoundation.BuiltIn.Store.EntityFrameworkCore.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Kernel.Store.Conformance",
+          "path": "essentials/tests/ActorFoundation/Store/Conformance/Elsa.ActorFoundation.Store.Conformance.csproj"
+        }
+      ]
+    },
+    {
+      "path": "essentials/tests/ActorFoundation/Store/InMemory/Elsa.ActorFoundation.Store.InMemory.csproj",
+      "name": "Elsa.ActorFoundation.Store.InMemory",
+      "kind": "test",
+      "domain": "Elsa.ActorFoundation",
+      "sub_domain": "Store.InMemory",
+      "role": "test",
+      "declared_target_framework": null,
+      "packable": false,
+      "package_id": null,
+      "line": null,
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.BuiltIn.Durable",
+          "path": "essentials/src/ActorFoundation/BuiltIn/Durable/Elsa.ActorFoundation.BuiltIn.Durable.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.Contracts",
+          "path": "essentials/src/ActorFoundation/Contracts/Elsa.ActorFoundation.Contracts.csproj"
+        }
+      ]
+    },
+    {
+      "path": "essentials/tests/ActorFoundation/TestSupport/Elsa.ActorFoundation.TestSupport.csproj",
+      "name": "Elsa.ActorFoundation.TestSupport",
+      "kind": "test",
+      "domain": "Elsa.ActorFoundation",
+      "sub_domain": "TestSupport",
+      "role": "test",
+      "declared_target_framework": null,
+      "packable": false,
+      "package_id": null,
+      "line": null,
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.Contracts",
+          "path": "essentials/src/ActorFoundation/Contracts/Elsa.ActorFoundation.Contracts.csproj"
+        }
+      ]
+    },
+    {
       "path": "essentials/tests/Api/Capabilities/Tests/Elsa.Api.Capabilities.Tests.csproj",
       "name": "Elsa.Api.Capabilities.Tests",
       "kind": "test",
@@ -15087,6 +15775,46 @@
           "type": "internal",
           "id": "Elsa.Activities.Sequence",
           "path": "essentials/src/Activities/Sequence/Elsa.Activities.Sequence.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.BuiltIn.Durable",
+          "path": "essentials/src/ActorFoundation/BuiltIn/Durable/Elsa.ActorFoundation.BuiltIn.Durable.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.BuiltIn.Hosting",
+          "path": "essentials/src/ActorFoundation/BuiltIn/Hosting/Elsa.ActorFoundation.BuiltIn.Hosting.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.BuiltIn.PostgreSql",
+          "path": "essentials/src/ActorFoundation/BuiltIn/PostgreSql/Elsa.ActorFoundation.BuiltIn.PostgreSql.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.BuiltIn.Runtime",
+          "path": "essentials/src/ActorFoundation/BuiltIn/Runtime/Elsa.ActorFoundation.BuiltIn.Runtime.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.BuiltIn.Store.EntityFrameworkCore",
+          "path": "essentials/src/ActorFoundation/BuiltIn/Store/EntityFrameworkCore/Elsa.ActorFoundation.BuiltIn.Store.EntityFrameworkCore.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.Contracts",
+          "path": "essentials/src/ActorFoundation/Contracts/Elsa.ActorFoundation.Contracts.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.Hosting",
+          "path": "essentials/src/ActorFoundation/Hosting/Elsa.ActorFoundation.Hosting.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.Model.Contracts",
+          "path": "essentials/src/ActorFoundation/Model/Contracts/Elsa.ActorFoundation.Model.Contracts.csproj"
         },
         {
           "type": "internal",
@@ -15520,6 +16248,11 @@
         },
         {
           "type": "internal",
+          "id": "Elsa.Workflows.Runtime.Graph",
+          "path": "essentials/src/Workflows/Runtime/Graph/Elsa.Workflows.Runtime.Graph.csproj"
+        },
+        {
+          "type": "internal",
           "id": "Elsa.Workflows.Runtime.Http",
           "path": "essentials/src/Workflows/Runtime/Http/Elsa.Workflows.Runtime.Http.csproj"
         },
@@ -15532,6 +16265,16 @@
           "type": "internal",
           "id": "Elsa.Workflows.Runtime.JavaScript",
           "path": "essentials/src/Workflows/Runtime/JavaScript/Elsa.Workflows.Runtime.JavaScript.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.Workflows.Runtime.Native.Activities",
+          "path": "essentials/src/Workflows/Runtime/Native/Activities/Elsa.Workflows.Runtime.Native.Activities.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.Workflows.Runtime.Native.Model",
+          "path": "essentials/src/Workflows/Runtime/Native/Model/Elsa.Workflows.Runtime.Native.Model.csproj"
         },
         {
           "type": "internal",
@@ -15557,6 +16300,11 @@
           "type": "internal",
           "id": "Elsa.Workflows.Runtime.Scheduling",
           "path": "essentials/src/Workflows/Runtime/Scheduling/Elsa.Workflows.Runtime.Scheduling.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.Workflows.Runtime.WorkflowActor",
+          "path": "essentials/src/Workflows/Runtime/WorkflowActor/Elsa.Workflows.Runtime.WorkflowActor.csproj"
         },
         {
           "type": "internal",
@@ -24201,6 +24949,40 @@
       ]
     },
     {
+      "path": "essentials/tests/Workflows/Runtime/Graph/Tests/Elsa.Workflows.Runtime.Graph.Tests.csproj",
+      "name": "Elsa.Workflows.Runtime.Graph.Tests",
+      "kind": "test",
+      "domain": "Elsa.Workflows",
+      "sub_domain": "Runtime.Graph.Tests",
+      "role": "test",
+      "declared_target_framework": null,
+      "packable": false,
+      "package_id": null,
+      "line": null,
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Elsa.Workflows.Runtime.Graph",
+          "path": "essentials/src/Workflows/Runtime/Graph/Elsa.Workflows.Runtime.Graph.csproj"
+        },
+        {
+          "type": "external",
+          "id": "Microsoft.NET.Test.Sdk",
+          "version": "18.0.0"
+        },
+        {
+          "type": "external",
+          "id": "xunit",
+          "version": "2.9.3"
+        },
+        {
+          "type": "external",
+          "id": "xunit.runner.visualstudio",
+          "version": "3.1.5"
+        }
+      ]
+    },
+    {
       "path": "essentials/tests/Workflows/Runtime/Http/Tests/Elsa.Workflows.Runtime.Http.Tests.csproj",
       "name": "Elsa.Workflows.Runtime.Http.Tests",
       "kind": "test",
@@ -24296,6 +25078,151 @@
           "type": "external",
           "id": "xunit.runner.visualstudio",
           "version": "3.1.5"
+        }
+      ]
+    },
+    {
+      "path": "essentials/tests/Workflows/Runtime/Native/Legacy/Elsa.Workflows.Runtime.Native.Legacy.csproj",
+      "name": "Elsa.Workflows.Runtime.Native.Legacy",
+      "kind": "test",
+      "domain": "Elsa.Workflows",
+      "sub_domain": "Runtime.Native.Legacy",
+      "role": "test",
+      "declared_target_framework": null,
+      "packable": false,
+      "package_id": null,
+      "line": null,
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Elsa.Workflows.Runtime.Native.Model",
+          "path": "essentials/src/Workflows/Runtime/Native/Model/Elsa.Workflows.Runtime.Native.Model.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Kernel.Workflows",
+          "path": "essentials/tests/ActorFoundation/Legacy/Workflows/Elsa.ActorFoundation.Legacy.Workflows.csproj"
+        }
+      ]
+    },
+    {
+      "path": "essentials/tests/Workflows/Runtime/Native/Migration/Run/Elsa.Workflows.Runtime.Native.Migration.Run.csproj",
+      "name": "Elsa.Workflows.Runtime.Native.Migration.Run",
+      "kind": "test",
+      "domain": "Elsa.Workflows",
+      "sub_domain": "Runtime.Native.Migration.Run",
+      "role": "test",
+      "declared_target_framework": null,
+      "packable": false,
+      "package_id": null,
+      "line": null,
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Elsa.Workflows.Runtime.Native.Model",
+          "path": "essentials/src/Workflows/Runtime/Native/Model/Elsa.Workflows.Runtime.Native.Model.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.Workflows.Runtime.WorkflowActor",
+          "path": "essentials/src/Workflows/Runtime/WorkflowActor/Elsa.Workflows.Runtime.WorkflowActor.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Kernel.Sim",
+          "path": "essentials/tests/ActorFoundation/Simulation/Elsa.ActorFoundation.Simulation.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Kernel.Foundation.InMemory",
+          "path": "essentials/tests/ActorFoundation/Store/InMemory/Elsa.ActorFoundation.Store.InMemory.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.TestSupport",
+          "path": "essentials/tests/ActorFoundation/TestSupport/Elsa.ActorFoundation.TestSupport.csproj"
+        }
+      ]
+    },
+    {
+      "path": "essentials/tests/Workflows/Runtime/Native/Migration/SqliteFixture/Elsa.Workflows.Runtime.Native.Migration.SqliteFixture.csproj",
+      "name": "Elsa.Workflows.Runtime.Native.Migration.SqliteFixture",
+      "kind": "test",
+      "domain": "Elsa.Workflows",
+      "sub_domain": "Runtime.Native.Migration.SqliteFixture",
+      "role": "test",
+      "declared_target_framework": null,
+      "packable": false,
+      "package_id": null,
+      "line": null,
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.BuiltIn.Hosting",
+          "path": "essentials/src/ActorFoundation/BuiltIn/Hosting/Elsa.ActorFoundation.BuiltIn.Hosting.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.Hosting",
+          "path": "essentials/src/ActorFoundation/Hosting/Elsa.ActorFoundation.Hosting.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.Workflows.Runtime.WorkflowActor",
+          "path": "essentials/src/Workflows/Runtime/WorkflowActor/Elsa.Workflows.Runtime.WorkflowActor.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Kernel.Foundation.InMemory",
+          "path": "essentials/tests/ActorFoundation/Store/InMemory/Elsa.ActorFoundation.Store.InMemory.csproj"
+        },
+        {
+          "type": "external",
+          "id": "Microsoft.Data.Sqlite",
+          "version": "10.0.10"
+        },
+        {
+          "type": "external",
+          "id": "SQLitePCLRaw.bundle_e_sqlite3",
+          "version": "3.0.3"
+        }
+      ]
+    },
+    {
+      "path": "essentials/tests/Workflows/Runtime/Native/Recovery/Run/Elsa.Workflows.Runtime.Native.Recovery.Run.csproj",
+      "name": "Elsa.Workflows.Runtime.Native.Recovery.Run",
+      "kind": "test",
+      "domain": "Elsa.Workflows",
+      "sub_domain": "Runtime.Native.Recovery.Run",
+      "role": "test",
+      "declared_target_framework": null,
+      "packable": false,
+      "package_id": null,
+      "line": null,
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Kernel.Sim",
+          "path": "essentials/tests/ActorFoundation/Simulation/Elsa.ActorFoundation.Simulation.csproj"
+        }
+      ]
+    },
+    {
+      "path": "essentials/tests/Workflows/Runtime/Native/Scopes/Run/Elsa.Workflows.Runtime.Native.Scopes.Run.csproj",
+      "name": "Elsa.Workflows.Runtime.Native.Scopes.Run",
+      "kind": "test",
+      "domain": "Elsa.Workflows",
+      "sub_domain": "Runtime.Native.Scopes.Run",
+      "role": "test",
+      "declared_target_framework": null,
+      "packable": false,
+      "package_id": null,
+      "line": null,
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Kernel.Sim",
+          "path": "essentials/tests/ActorFoundation/Simulation/Elsa.ActorFoundation.Simulation.csproj"
         }
       ]
     },
@@ -25137,6 +26064,93 @@
           "type": "external",
           "id": "xunit.runner.visualstudio",
           "version": "3.1.5"
+        }
+      ]
+    },
+    {
+      "path": "essentials/tests/Workflows/Runtime/Statecharts/Native/Elsa.Workflows.Runtime.Statecharts.Native.csproj",
+      "name": "Elsa.Workflows.Runtime.Statecharts.Native",
+      "kind": "test",
+      "domain": "Elsa.Workflows",
+      "sub_domain": "Runtime.Statecharts.Native",
+      "role": "test",
+      "declared_target_framework": null,
+      "packable": false,
+      "package_id": null,
+      "line": null,
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Elsa.Workflows.Runtime.Native.Model",
+          "path": "essentials/src/Workflows/Runtime/Native/Model/Elsa.Workflows.Runtime.Native.Model.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Kernel.Statecharts",
+          "path": "prototypes/kernel-model/models/Statecharts/Kernel.Statecharts.csproj"
+        }
+      ]
+    },
+    {
+      "path": "essentials/tests/Workflows/Runtime/Statecharts/OrderFixture/Elsa.Workflows.Runtime.Statecharts.OrderFixture.csproj",
+      "name": "Elsa.Workflows.Runtime.Statecharts.OrderFixture",
+      "kind": "test",
+      "domain": "Elsa.Workflows",
+      "sub_domain": "Runtime.Statecharts.OrderFixture",
+      "role": "test",
+      "declared_target_framework": null,
+      "packable": false,
+      "package_id": null,
+      "line": null,
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Kernel.Statecharts.Native",
+          "path": "essentials/tests/Workflows/Runtime/Statecharts/Native/Elsa.Workflows.Runtime.Statecharts.Native.csproj"
+        }
+      ]
+    },
+    {
+      "path": "essentials/tests/Workflows/Runtime/Statecharts/Run/Elsa.Workflows.Runtime.Statecharts.Run.csproj",
+      "name": "Elsa.Workflows.Runtime.Statecharts.Run",
+      "kind": "test",
+      "domain": "Elsa.Workflows",
+      "sub_domain": "Runtime.Statecharts.Run",
+      "role": "test",
+      "declared_target_framework": null,
+      "packable": false,
+      "package_id": null,
+      "line": null,
+      "edges": [
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.BuiltIn.Hosting",
+          "path": "essentials/src/ActorFoundation/BuiltIn/Hosting/Elsa.ActorFoundation.BuiltIn.Hosting.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.ActorFoundation.Hosting",
+          "path": "essentials/src/ActorFoundation/Hosting/Elsa.ActorFoundation.Hosting.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Kernel.Sim",
+          "path": "essentials/tests/ActorFoundation/Simulation/Elsa.ActorFoundation.Simulation.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Kernel.Foundation.InMemory",
+          "path": "essentials/tests/ActorFoundation/Store/InMemory/Elsa.ActorFoundation.Store.InMemory.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Kernel.Statecharts.Native",
+          "path": "essentials/tests/Workflows/Runtime/Statecharts/Native/Elsa.Workflows.Runtime.Statecharts.Native.csproj"
+        },
+        {
+          "type": "internal",
+          "id": "Elsa.Workflows.Runtime.Statecharts.OrderFixture",
+          "path": "essentials/tests/Workflows/Runtime/Statecharts/OrderFixture/Elsa.Workflows.Runtime.Statecharts.OrderFixture.csproj"
         }
       ]
     },
